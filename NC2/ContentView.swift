@@ -10,18 +10,42 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var date = Date()
-    
+    @State private var timeRemaining = 100
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
     var body: some View {
         ZStack {
+            
             VStack{
-                DatePicker(
-                    "Start Date",
-                    selection: $date,
-                    displayedComponents: [.date]
-                )
-                .padding(10)
-                .accentColor(Color("8093F1"))
-                .datePickerStyle(.graphical)
+                //Text and Counter
+                HStack(){
+                    Text("Expected childbirth in...")
+                        .foregroundColor(Color("8093F1"))
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                    
+                }
+                .padding()
+                
+                
+                
+                //Calendar
+                VStack{
+                    DatePicker(
+                        "Start Date",
+                        selection: $date,
+                        displayedComponents: [.date]
+                    )
+                    .padding(5)
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .accentColor(Color("8093F1"))
+                    .datePickerStyle(.graphical)
+                    .cornerRadius(10)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color("8093F1"), lineWidth: 4))
+                    .padding()
+                }
             }
         }
         .padding()
