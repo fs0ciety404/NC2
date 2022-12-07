@@ -12,13 +12,17 @@ struct ContentView: View {
     @State private var date = Date()
     
     var body: some View {
-        VStack {
-            DatePicker(
+        ZStack {
+            VStack{
+                DatePicker(
                     "Start Date",
                     selection: $date,
                     displayedComponents: [.date]
                 )
+                .padding(10)
+                .accentColor(Color("8093F1"))
                 .datePickerStyle(.graphical)
+            }
         }
         .padding()
     }
