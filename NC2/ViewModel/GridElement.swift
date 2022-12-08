@@ -27,7 +27,9 @@ struct GridElement: View {
                         .foregroundColor(.black)
                         .fontWeight(.bold)
                 }
-            }.frame(width: 180, height: 150)
+            }.frame(width: 130, height: 150)
         }
     }
 }
+
+

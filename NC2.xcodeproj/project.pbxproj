@@ -14,6 +14,7 @@
 		9C952FA42940DEA000785C9F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C952FA32940DEA000785C9F /* Button.swift */; };
 		9C952FAB2940F8BB00785C9F /* GridElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C952FAA2940F8BB00785C9F /* GridElement.swift */; };
 		9C952FB12940FA1700785C9F /* EmotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C952FB02940FA1700785C9F /* EmotionsView.swift */; };
+		9C952FB329425D7400785C9F /* HDYFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C952FB229425D7400785C9F /* HDYFT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		9C952FA32940DEA000785C9F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		9C952FAA2940F8BB00785C9F /* GridElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridElement.swift; sourceTree = "<group>"; };
 		9C952FB02940FA1700785C9F /* EmotionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsView.swift; sourceTree = "<group>"; };
+		9C952FB229425D7400785C9F /* HDYFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDYFT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		9C952FA52940DEB000785C9F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9C952FB229425D7400785C9F /* HDYFT.swift */,
 				9C952FAA2940F8BB00785C9F /* GridElement.swift */,
 				9C952FA32940DEA000785C9F /* Button.swift */,
 			);
@@ -157,6 +160,7 @@
 				9C952FAB2940F8BB00785C9F /* GridElement.swift in Sources */,
 				236D9F272940C75A00D1D465 /* ContentView.swift in Sources */,
 				9C952FA42940DEA000785C9F /* Button.swift in Sources */,
+				9C952FB329425D7400785C9F /* HDYFT.swift in Sources */,
 				236D9F252940C75A00D1D465 /* NC2App.swift in Sources */,
 				9C952FB12940FA1700785C9F /* EmotionsView.swift in Sources */,
 			);

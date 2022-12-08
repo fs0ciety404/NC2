@@ -8,40 +8,29 @@
 import SwiftUI
 
 struct EmotionsView: View {
+    @State var selectedDate: Date = Date()
     var body: some View {
-        ScrollView {
-            Text("How do you feel today?")
-                .foregroundColor(.black)
-                .font(.title)
-                .fontWeight(.bold)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()
-            Grid {
-                GridRow {
+        VStack {
+            TitleName(name: "How do you feel today?")
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 20) {
                     GridElement(image: "sun.max", text: "Happy")
                     GridElement(image: "moon", text: "Sleepy")
-                }
-                GridRow {
                     GridElement(image: "bolt", text: "Active")
                     GridElement(image: "cloud.bolt", text: "Angry")
-                }
-                GridRow {
                     GridElement(image: "figure.yoga", text: "Balanced")
                     GridElement(image: "water.waves", text: "Relaxed")
                 }
-                GridRow {
-                    GridElement(image: "bolt", text: "Active")
-                    GridElement(image: "cloud.bolt", text: "Angry")
-                }
-                GridRow {
-                    GridElement(image: "sun.max", text: "Happy")
-                    GridElement(image: "moon", text: "sleepy")
-                }
-                GridRow {
-                    GridElement(image: "figure.yoga", text: "Balanced")
-                    GridElement(image: "water.waves", text: "Relaxed")
-                }
-            }.foregroundColor(Color("72DDF7"))
+                .foregroundColor(Color("8093F1"))
+                .padding(.horizontal)
+            }
+            Spacer()
+            TitleName(name: "Look at your other days")
+            DatePicker("Date", selection: $selectedDate, displayedComponents: [.date])
+                .datePickerStyle(.graphical)
+                .padding(.horizontal)
+                .accentColor(Color("8093F1"))
+            Spacer(minLength: 100)
         }
     }
 }
