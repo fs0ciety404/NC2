@@ -15,6 +15,11 @@
 		9C952FAB2940F8BB00785C9F /* GridElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C952FAA2940F8BB00785C9F /* GridElement.swift */; };
 		9C952FB12940FA1700785C9F /* EmotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C952FB02940FA1700785C9F /* EmotionsView.swift */; };
 		9C952FB329425D7400785C9F /* HDYFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C952FB229425D7400785C9F /* HDYFT.swift */; };
+		9CF59B9D29474E9E005EDE04 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF59B9C29474E9E005EDE04 /* DismissButton.swift */; };
+		9CF59B9F2947515F005EDE04 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF59B9E2947515F005EDE04 /* TipsView.swift */; };
+		9CF59BA1294751C5005EDE04 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF59BA0294751C5005EDE04 /* Tips.swift */; };
+		9CF59BA6294754D2005EDE04 /* TipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF59BA5294754D2005EDE04 /* TipVM.swift */; };
+		9CF59BAC29476D85005EDE04 /* ExpandableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF59BAB29476D85005EDE04 /* ExpandableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		9C952FAA2940F8BB00785C9F /* GridElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridElement.swift; sourceTree = "<group>"; };
 		9C952FB02940FA1700785C9F /* EmotionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsView.swift; sourceTree = "<group>"; };
 		9C952FB229425D7400785C9F /* HDYFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDYFT.swift; sourceTree = "<group>"; };
+		9CF59B9C29474E9E005EDE04 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		9CF59B9E2947515F005EDE04 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		9CF59BA0294751C5005EDE04 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
+		9CF59BA5294754D2005EDE04 /* TipVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipVM.swift; sourceTree = "<group>"; };
+		9CF59BAB29476D85005EDE04 /* ExpandableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				236D9F242940C75A00D1D465 /* NC2App.swift */,
+				9CF59BA429475221005EDE04 /* Model */,
 				9C952FA52940DEB000785C9F /* ViewModel */,
-				236D9F262940C75A00D1D465 /* ContentView.swift */,
-				9C952FB02940FA1700785C9F /* EmotionsView.swift */,
+				9CF59BA2294751D1005EDE04 /* View */,
 				236D9F282940C75B00D1D465 /* Assets.xcassets */,
 				236D9F2A2940C75B00D1D465 /* Preview Content */,
 			);
@@ -80,11 +90,32 @@
 		9C952FA52940DEB000785C9F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9CF59BAB29476D85005EDE04 /* ExpandableButton.swift */,
+				9CF59BA5294754D2005EDE04 /* TipVM.swift */,
+				9CF59B9C29474E9E005EDE04 /* DismissButton.swift */,
 				9C952FB229425D7400785C9F /* HDYFT.swift */,
 				9C952FAA2940F8BB00785C9F /* GridElement.swift */,
 				9C952FA32940DEA000785C9F /* Button.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9CF59BA2294751D1005EDE04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				236D9F262940C75A00D1D465 /* ContentView.swift */,
+				9C952FB02940FA1700785C9F /* EmotionsView.swift */,
+				9CF59B9E2947515F005EDE04 /* TipsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CF59BA429475221005EDE04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CF59BA0294751C5005EDE04 /* Tips.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,12 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF59B9D29474E9E005EDE04 /* DismissButton.swift in Sources */,
 				9C952FAB2940F8BB00785C9F /* GridElement.swift in Sources */,
 				236D9F272940C75A00D1D465 /* ContentView.swift in Sources */,
 				9C952FA42940DEA000785C9F /* Button.swift in Sources */,
+				9CF59B9F2947515F005EDE04 /* TipsView.swift in Sources */,
 				9C952FB329425D7400785C9F /* HDYFT.swift in Sources */,
+				9CF59BA6294754D2005EDE04 /* TipVM.swift in Sources */,
 				236D9F252940C75A00D1D465 /* NC2App.swift in Sources */,
 				9C952FB12940FA1700785C9F /* EmotionsView.swift in Sources */,
+				9CF59BA1294751C5005EDE04 /* Tips.swift in Sources */,
+				9CF59BAC29476D85005EDE04 /* ExpandableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

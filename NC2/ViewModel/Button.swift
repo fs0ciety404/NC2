@@ -32,12 +32,12 @@ struct EmotionsButton: View {
 }
 
 struct TipsButton: View {
-    var action: String
+    @State var showModal = false
     var color: String
     var text: String
     var body: some View {
         Button {
-            print(action)
+            showModal.toggle()
         } label: {
             RoundedRectangle(cornerRadius: 40)
                 .frame(width: 160, height: 170)
@@ -46,6 +46,9 @@ struct TipsButton: View {
                 .overlay {
                     Text(text)
                         .foregroundColor(.black)
+                }
+                .fullScreenCover(isPresented: $showModal) {
+                    TipsView()
                 }
         }
     }

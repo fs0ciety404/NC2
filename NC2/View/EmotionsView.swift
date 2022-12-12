@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct EmotionsView: View {
+    @Environment(\.presentationMode) var presentationMode
     @State var selectedDate: Date = Date()
     var body: some View {
         VStack {
+            Dismiss()
             TitleName(name: "How do you feel today?")
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {

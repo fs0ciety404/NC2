@@ -15,24 +15,20 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            
             VStack{
                 //Text and Counter
                 HStack(){
                     Text("Expected childbirth in...")
                         .foregroundColor(Color("8093F1"))
                         .fontWeight(.bold)
-                    
                     Spacer()
-                    
                 }
                 .padding()
-                
                 //Buttons
                 HStack {
                     EmotionsButton(color: "72DDF7", text: "How do you feel today?")
                     Spacer()
-                    TipsButton(action: "hello world", color: "72DDF7", text: "Discover our tips for you")
+                    TipsButton(color: "72DDF7", text: "Discover our tips for you")
                 }.padding(.horizontal, 10)
                 //Calendar
                 VStack{
