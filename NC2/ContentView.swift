@@ -7,27 +7,47 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     
     @State private var date = Date()
     
     var body: some View {
-        ZStack {
-            VStack{
-                DatePicker(
-                    "Start Date",
-                    selection: $date,
-                    displayedComponents: [.date]
-                )
-                .padding(10)
-                .accentColor(Color("8093F1"))
-                .datePickerStyle(.graphical)
+        
+        NavigationStack{
+            
+            
+            ZStack{
+                
+                LinearGradient(gradient: Gradient(colors: [.mint, .accentColor]), startPoint: .top, endPoint: .bottom).opacity(0.15)
+                    .ignoresSafeArea()
+                
+                Text("")
+                    .toolbar(content: {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: {()
+                            }) {
+                                Image(systemName: "info.circle")
+                                    .imageScale(.large)
+                            }
+                        }
+                    })
+                ScrollView{
+                    VStack (spacing:20){
+                        
+                        
+                        
+                        buttonsView()
+                        
+        
+                       
+                        
+                    }
+                }
             }
         }
-        .padding()
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
