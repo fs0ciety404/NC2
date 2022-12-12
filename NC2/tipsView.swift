@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct tipsView: View {
     var body: some View{

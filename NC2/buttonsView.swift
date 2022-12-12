@@ -13,7 +13,7 @@ struct buttonsView: View {
         @State private var showtipsView = false
         @State private var textToDisplay = ""
         @State var selectedDate = Date()
-    @AppStorage("counter") var calculateDayDifference: Int?
+    @AppStorage("counter") var calculateDayDifference: Int = 0
     
     var body: some View {
         
@@ -33,7 +33,7 @@ struct buttonsView: View {
                         
                         self.showtestCounter = true
                     }) {
-                        Text("The selected date is in \(selectedDate) days")
+                        Text("The selected date is in \(calculateDayDifference) days")
                         
                     }.font(.title2)  .bold()
                         .foregroundColor(.black)
