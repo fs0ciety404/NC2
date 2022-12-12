@@ -16,7 +16,6 @@ struct ContentView: View {
         
         NavigationStack{
             
-            
             ZStack{
                 
                 LinearGradient(gradient: Gradient(colors: [.mint, .accentColor]), startPoint: .top, endPoint: .bottom).opacity(0.15)
@@ -32,18 +31,10 @@ struct ContentView: View {
                             }
                         }
                     })
-                ScrollView{
-                    VStack (spacing:20){
-                        
-                        
-                        
-                        buttonsView()
-                        
-        
-                       
-                        
-                    }
-                }
+                
+                
+                
+                buttonsView()
             }
         }
     }
