@@ -10,14 +10,14 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var date = Date()
-    @State private var timeRemaining = 100
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
+    @State private var showingSheet = false
+    
+    
     var body: some View {
         ZStack {
             
             VStack{
-                //Text and Counter
+                //buttons and text
                 HStack(){
                     Text("Expected childbirth in...")
                         .foregroundColor(Color("8093F1"))
@@ -28,6 +28,33 @@ struct ContentView: View {
                 }
                 .padding()
                 
+                HStack{
+                    VStack(alignment: .center){
+                        Button("How do you fill today?") {
+                            showingSheet.toggle()
+                        }
+                        .buttonStyle(.bordered)
+                        .sheet(isPresented: $showingSheet) {
+                            EmojiPicker()
+                        }
+                    }
+                    .padding()
+                    
+                    Spacer()
+                    
+                    VStack(alignment: .center){
+                        Button("How do you fill today?") {
+                            showingSheet.toggle()
+                        }
+                        .buttonStyle(.bordered)
+                        .sheet(isPresented: $showingSheet) {
+                            EmojiPicker()
+                        }
+                    }
+                    .padding()
+                    
+                }
+
                 
                 
                 //Calendar
@@ -43,7 +70,7 @@ struct ContentView: View {
                     .datePickerStyle(.graphical)
                     .cornerRadius(10)
                     .overlay(RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color("8093F1"), lineWidth: 4))
+                        .stroke(Color("8093F1"), lineWidth: 4))
                     .padding()
                 }
             }
