@@ -43,7 +43,7 @@ struct buttonsView: View {
                             .shadow(radius: 5, y:10))
                     
                         .sheet(isPresented: self.$showtestCounter) {
-                            testCounter()
+                            counter()
                         
                 }
                     
