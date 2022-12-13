@@ -14,6 +14,11 @@
 		2383DA492947915A004BFD36 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383DA482947915A004BFD36 /* ButtonView.swift */; };
 		2383DA4B2947918A004BFD36 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383DA4A2947918A004BFD36 /* CounterView.swift */; };
 		2383DA4F29479206004BFD36 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383DA4E29479206004BFD36 /* TipsView.swift */; };
+		9CE8E22F2947B55B00CE851E /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8E22E2947B55B00CE851E /* TitleText.swift */; };
+		9CE8E2332947B76500CE851E /* CounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8E2322947B76500CE851E /* CounterButton.swift */; };
+		9CE8E2352948649B00CE851E /* BodyAndMindButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8E2342948649B00CE851E /* BodyAndMindButtons.swift */; };
+		9CE8E2372948DE9800CE851E /* TIpsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8E2362948DE9800CE851E /* TIpsButton.swift */; };
+		9CE8E2392948DFDC00CE851E /* TipsText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8E2382948DFDC00CE851E /* TipsText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		2383DA482947915A004BFD36 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		2383DA4A2947918A004BFD36 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		2383DA4E29479206004BFD36 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		9CE8E22E2947B55B00CE851E /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
+		9CE8E2322947B76500CE851E /* CounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterButton.swift; sourceTree = "<group>"; };
+		9CE8E2342948649B00CE851E /* BodyAndMindButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyAndMindButtons.swift; sourceTree = "<group>"; };
+		9CE8E2362948DE9800CE851E /* TIpsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIpsButton.swift; sourceTree = "<group>"; };
+		9CE8E2382948DFDC00CE851E /* TipsText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,7 @@
 		236D9F182940C75A00D1D465 = {
 			isa = PBXGroup;
 			children = (
+				9CE8E2382948DFDC00CE851E /* TipsText.swift */,
 				236D9F232940C75A00D1D465 /* NC2 */,
 				236D9F222940C75A00D1D465 /* Products */,
 			);
@@ -96,6 +107,10 @@
 		2383DA472947910F004BFD36 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9CE8E2362948DE9800CE851E /* TIpsButton.swift */,
+				9CE8E2342948649B00CE851E /* BodyAndMindButtons.swift */,
+				9CE8E22E2947B55B00CE851E /* TitleText.swift */,
+				9CE8E2322947B76500CE851E /* CounterButton.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,7 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE8E2332947B76500CE851E /* CounterButton.swift in Sources */,
 				2383DA4F29479206004BFD36 /* TipsView.swift in Sources */,
+				9CE8E2392948DFDC00CE851E /* TipsText.swift in Sources */,
+				9CE8E22F2947B55B00CE851E /* TitleText.swift in Sources */,
+				9CE8E2372948DE9800CE851E /* TIpsButton.swift in Sources */,
+				9CE8E2352948649B00CE851E /* BodyAndMindButtons.swift in Sources */,
 				2383DA44294790E6004BFD36 /* ContentvView.swift in Sources */,
 				236D9F252940C75A00D1D465 /* NC2App.swift in Sources */,
 				2383DA492947915A004BFD36 /* ButtonView.swift in Sources */,
