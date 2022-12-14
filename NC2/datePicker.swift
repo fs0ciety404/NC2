@@ -8,40 +8,31 @@
 import SwiftUI
 
 struct datePicker: View {
-  
+    @Environment(\.dismiss) var dismiss
     
-    @State var selectedDate = Date()
-    @State var currentDate = Date()
-    @State var isCounterVisible = false
-    
-    
+    @Binding var selectedDate: Date
 
-    var body: some View {
-        
-        VStack {
-           
-            DatePicker("", selection: $selectedDate, displayedComponents: .date)
-                            .datePickerStyle(.wheel)
-                            .padding(.trailing, 30)
-                        
-            Button(action: {
-                            self.isCounterVisible = false
-                            // Save the selected date to another view
-                        }) {
-                            Text("Save")
-                        }
-                        .sheet(isPresented: $isCounterVisible) {
-                            buttonsView(selectedDate: self.selectedDate)
-                        }
-                      
+        var body: some View {
+            NavigationView {
+                VStack {
+                    DatePicker("", selection: $selectedDate, displayedComponents: .date)
+                        .datePickerStyle(.wheel)
+                    
+                    Button {
+                        dismiss()
+                    } label: {
+                        Text("Select")
                     }
-
+                }
+            }
+        }
     }
-}
+
+
 
 struct datePicker_Previews: PreviewProvider {
     static var previews: some View {
-        datePicker()
+        datePicker(selectedDate: .constant(Date()))
     }
 }
 

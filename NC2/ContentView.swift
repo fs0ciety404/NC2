@@ -13,7 +13,7 @@ struct SkView: UIViewRepresentable {
         let skView = SKView()
 
         // load up the animation frames
-        let textureAtlas = SKTextureAtlas(named: "Sprites")
+        let _ = SKTextureAtlas(named: "Sprites")
         var animationFrames: [SKTexture] = []
         let frames = [SKTexture(imageNamed: "Stork_0"),
                       SKTexture(imageNamed: "Stork_1"),
