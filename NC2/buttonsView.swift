@@ -43,15 +43,17 @@ struct buttonsView: View  {
                         }.font(.largeTitle)  .bold()
                             .foregroundColor(.black)
                             .padding()
-                        
                             .sheet(isPresented: $showdatePicker) {
                                 datePicker(selectedDate: $selectedDate)
                                 
                             }
+                            .background(RoundedRectangle(cornerRadius: 20).fill(.white) .opacity(1)
+                                .frame(width: 180, height: 80)
+                                .shadow(color: .gray, radius: 5, y:2))
                         
                         Text ("days")
                             .font(.title)
-                            .padding(.bottom, 60)
+                            .padding(.bottom, 30)
                             .frame(width: 80, height: 30)
                     }
                     
@@ -75,7 +77,7 @@ struct buttonsView: View  {
                             .padding()
                             .background(RoundedRectangle(cornerRadius: 20).fill(Color.accentColor).opacity(0.90)
                                 .frame(width: 300, height: 125)
-                                .shadow(radius: 5, y:10))
+                                .shadow(color: .black, radius: 5, y:4))
                         
                             .sheet(isPresented: self.$showbodyView) {
                                 bodyView()
@@ -94,7 +96,7 @@ struct buttonsView: View  {
                             .padding()
                             .background(RoundedRectangle(cornerRadius: 20).fill(Color.mint).opacity(0.8)
                                 .frame(width: 300, height: 125)
-                                .shadow(radius: 5, y:10))
+                                .shadow(color: .black, radius: 5, y:4))
                         
                             .sheet(isPresented: self.$showmindView) {
                                 mindView()
