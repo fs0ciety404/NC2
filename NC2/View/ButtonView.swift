@@ -15,22 +15,27 @@ struct ButtonsView: View {
     @State var selectedDate = Date()
     @AppStorage("counter") var calculateDayDifference: Int = 0
     var body: some View {
-        //ZStack{
-        VStack {
-            Spacer()
-            TitleText(heading: "Expected childbirth in...")
-            //NavigationStack{
-                CounterButton()
-            Spacer()
-            TitleText(heading: "Discover our tips for you")
-            MainButton(showtipsView: false, text: "Body", icon: "brain", color: "8093F1")
-            Spacer()
-            MainButton(showtipsView: false, text: "Mind", icon: "person", color: "72DDF7")
-            Spacer()
+        NavigationStack {
+            VStack {
+                    Spacer()
+                    TitleText(heading: "Expected childbirth in...")
+                    CounterButton()
+                    Spacer()
+                    TitleText(heading: "Discover our tips for you")
+                NavigationLink {
+                    TipsView()
+                } label: {
+                    MainButton(text: "brain", icon: "brain", color: "8093F1")
                 }
-                
-            //}
-        //}
+                    Spacer()
+                NavigationLink {
+                    TipsView()
+                } label: {
+                    MainButton(text: "Mind", icon: "person", color: "72DDF7")
+                }
+                    Spacer()
+            }
+        }
     }
 }
 

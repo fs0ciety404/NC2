@@ -11,16 +11,16 @@ import SwiftUI
 struct ContentView: View {
     @State private var date = Date()
     var body: some View {
-        NavigationStack{
-            ZStack{
-                Background()
-                ButtonsView()
-            }
-            .toolbar(content: {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavBarIcon()
-                }
-            })
+            NavigationStack{
+                    ButtonsView()
+                    .background {
+                        Background()
+                    }
+    //            .toolbar(content: {
+    //                ToolbarItem(placement: .navigationBarTrailing) {
+    //                    NavBarIcon()
+    //                }
+    //            })
         }
     }
 }
@@ -47,6 +47,6 @@ struct NavBarIcon: View {
 struct Background: View {
     var body: some View {
         LinearGradient(gradient: Gradient(colors: [.mint, .accentColor]), startPoint: .top, endPoint: .bottom).opacity(0.15)
-            .ignoresSafeArea()
+            .ignoresSafeArea(.all)
     }
 }
