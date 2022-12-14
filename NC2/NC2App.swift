@@ -10,22 +10,20 @@ import SpriteKit
 
 @main
 struct NC2App: App {
-    // Use the AppDelegate to handle app-level events
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+  
 
-    // The body of the app is a WindowGroup containing a SkView
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           ContentView()
         }
     }
 }
-
-// The AppDelegate handles app-level events
-class AppDelegate: NSObject, UIApplicationDelegate {
-    // Called when the app finishes launching
+ 
+class AppDelegate: NSObject, UIApplicationDelegate{
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        // Return true to indicate that the app was launched successfully
+   
         return true
     }
 }
