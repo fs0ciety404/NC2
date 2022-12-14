@@ -14,6 +14,7 @@ struct TipsView: View {
             Background()
             ScrollView(showsIndicators: false) {
                     VStack(spacing: 70) {
+                        Spacer()
                         NauseaButton(text: "Nausea", icon: "brain", color: "8093F1")
                         BreastButton(text: "Breast Tenderness", icon: "brain", color: "8093F1")
                         FatigueButton(text: "Fatigue", icon: "figure.cooldown", color: "8093F1")

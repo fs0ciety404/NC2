@@ -11,14 +11,16 @@ struct CounterView: View {
     @State var selectedDate = Date()
     @State var currentDate = Date()
     var body: some View {
-        VStack {
-            // Use a DatePicker to allow the user to select a new date
-            DatePicker("", selection: $selectedDate, displayedComponents: [.date])
-                .datePickerStyle(.wheel)
-            // Display the day difference in a text label
-            
-            // Create a button to update the current date
-            
+        ZStack {
+            Background()
+            VStack {
+                // Use a DatePicker to allow the user to select a new date
+                DatePicker("", selection: $selectedDate, displayedComponents: [.date])
+                    .datePickerStyle(.wheel)
+                // Display the day difference in a text label
+                
+                // Create a button to update the current date
+            }
         }
     }
     func calculateDayDifference() -> Int {

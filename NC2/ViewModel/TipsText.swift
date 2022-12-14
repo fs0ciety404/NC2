@@ -18,7 +18,7 @@ struct TipsText: View {
                 RoundedRectangle(cornerRadius: 30)
                     .foregroundColor(Color("8093F1"))
                     .opacity(0.3)
-                    .frame(width: 350, height: isCollapsed ? 180 : 370)
+                    .frame(width: 350, height: isCollapsed ? 180 : 400)
                     .onTapGesture {
                         self.isCollapsed = !self.isCollapsed
                     }
