@@ -5,7 +5,6 @@
 //  Created by Ludovica Marte on 07/12/22.
 //
 import SwiftUI
-import UIKit
 
 
 struct buttonsView: View  {

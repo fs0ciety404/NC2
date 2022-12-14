@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		236D9F252940C75A00D1D465 /* NC2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236D9F242940C75A00D1D465 /* NC2App.swift */; };
-		236D9F272940C75A00D1D465 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236D9F262940C75A00D1D465 /* ContentView.swift */; };
 		236D9F292940C75B00D1D465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236D9F282940C75B00D1D465 /* Assets.xcassets */; };
 		236D9F2C2940C75B00D1D465 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236D9F2B2940C75B00D1D465 /* Preview Assets.xcassets */; };
 		C229D0E32947824B00F24C93 /* mindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C229D0E22947824B00F24C93 /* mindView.swift */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		236D9F212940C75A00D1D465 /* NC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236D9F242940C75A00D1D465 /* NC2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC2App.swift; sourceTree = "<group>"; };
-		236D9F262940C75A00D1D465 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		236D9F282940C75B00D1D465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236D9F2B2940C75B00D1D465 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C229D0E22947824B00F24C93 /* mindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindView.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				236D9F242940C75A00D1D465 /* NC2App.swift */,
-				236D9F262940C75A00D1D465 /* ContentView.swift */,
 				C23CBF9E294A027700393C8E /* mainView.swift */,
 				C229D0E42947826800F24C93 /* buttonsView.swift */,
 				C2EF5AB42947F78600084E5C /* datePicker.swift */,
@@ -158,7 +155,6 @@
 				C2EF5AB32947E8E700084E5C /* testcounter.swift in Sources */,
 				C23CBF9F294A027700393C8E /* mainView.swift in Sources */,
 				C229D0E32947824B00F24C93 /* mindView.swift in Sources */,
-				236D9F272940C75A00D1D465 /* ContentView.swift in Sources */,
 				236D9F252940C75A00D1D465 /* NC2App.swift in Sources */,
 				C2EF5AB12947E40800084E5C /* bodyView.swift in Sources */,
 				C229D0E52947826800F24C93 /* buttonsView.swift in Sources */,
