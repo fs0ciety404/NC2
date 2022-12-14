@@ -17,6 +17,7 @@ struct datePicker: View {
                 VStack {
                     DatePicker("", selection: $selectedDate, displayedComponents: .date)
                         .datePickerStyle(.wheel)
+                        .padding(.trailing, 55)
                     
                     Button {
                         dismiss()
