@@ -9,15 +9,20 @@ import SwiftUI
 
 struct TipsView: View {
     @State var isExpanded = false
+    @State var bodyValue: Bool
     var body: some View {
         ZStack {
             Background()
             ScrollView(showsIndicators: false) {
                     VStack(spacing: 70) {
-                        Spacer()
-                        NauseaButton(text: "Nausea", icon: "brain", color: "8093F1")
-                        BreastButton(text: "Breast Tenderness", icon: "brain", color: "8093F1")
-                        FatigueButton(text: "Fatigue", icon: "figure.cooldown", color: "8093F1")
+                        if bodyValue == true {
+                            Spacer()
+                            NauseaButton(text: "Nausea", icon: "heart", color: "8093F1")
+                            BreastButton(text: "Breast Tenderness", icon: "tropicalstorm", color: "8093F1")
+                            FatigueButton(text: "Fatigue", icon: "figure.cooldown", color: "8093F1")
+                        } else {
+                            PsychButton(text: "General tips", icon: "camera.macro", color: "8093F1")
+                        }
                     }
             }
         }
@@ -25,6 +30,6 @@ struct TipsView: View {
 }
 struct feelingsView_Previews: PreviewProvider {
     static var previews: some View {
-        TipsView()
+        TipsView(bodyValue: true)
     }
 }

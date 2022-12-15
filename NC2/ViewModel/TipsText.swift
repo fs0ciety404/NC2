@@ -30,6 +30,7 @@ struct TipsText: View {
                             self.isCollapsed = !self.isCollapsed
                         }
                         Text(description)
+                        .font(.system(size: 20))
                             .foregroundColor(.black)
                             .multilineTextAlignment(.leading)
                             .frame(height: isCollapsed ? 100 : 300, alignment: .leading)

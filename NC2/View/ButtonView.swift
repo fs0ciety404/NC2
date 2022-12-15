@@ -23,13 +23,13 @@ struct ButtonsView: View {
                     Spacer()
                     TitleText(heading: "Discover our tips for you")
                 NavigationLink {
-                    TipsView()
+                    TipsView(bodyValue: true)
                 } label: {
                     MainButton(text: "brain", icon: "brain", color: "8093F1")
                 }
                     Spacer()
                 NavigationLink {
-                    TipsView()
+                    TipsView(bodyValue: false)
                 } label: {
                     MainButton(text: "Mind", icon: "person", color: "72DDF7")
                 }

@@ -6,21 +6,16 @@
 //
 
 import SwiftUI
-
+import UIKit
 
 struct ContentView: View {
     @State private var date = Date()
     var body: some View {
-            NavigationStack{
-                    ButtonsView()
-                    .background {
-                        Background()
-                    }
-    //            .toolbar(content: {
-    //                ToolbarItem(placement: .navigationBarTrailing) {
-    //                    NavBarIcon()
-    //                }
-    //            })
+        NavigationStack{
+            ButtonsView()
+                .background {
+                    Background()
+                }
         }
     }
 }
@@ -30,18 +25,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-//MARK: toolbar icon
-struct NavBarIcon: View {
-    var body: some View {
-        Button {
-            print("")
-        } label: {
-            Image(systemName: "info.circle")
-                .imageScale(.large)
-                .foregroundColor(Color("8093F1"))
-        }
-    }
-}
+
 
 //MARK: background
 struct Background: View {

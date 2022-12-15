@@ -16,6 +16,7 @@
 		2383DA4F29479206004BFD36 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383DA4E29479206004BFD36 /* TipsView.swift */; };
 		9C14F31E294A22B100178776 /* TipsButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14F31D294A22B100178776 /* TipsButton2.swift */; };
 		9C14F320294A255E00178776 /* TipsButton3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14F31F294A255E00178776 /* TipsButton3.swift */; };
+		9CB0D615294B5B3D0095EE06 /* TipsButton4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0D614294B5B3D0095EE06 /* TipsButton4.swift */; };
 		9CE8E22F2947B55B00CE851E /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8E22E2947B55B00CE851E /* TitleText.swift */; };
 		9CE8E2332947B76500CE851E /* CounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8E2322947B76500CE851E /* CounterButton.swift */; };
 		9CE8E2352948649B00CE851E /* BodyAndMindButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8E2342948649B00CE851E /* BodyAndMindButtons.swift */; };
@@ -34,6 +35,7 @@
 		2383DA4E29479206004BFD36 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 		9C14F31D294A22B100178776 /* TipsButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsButton2.swift; sourceTree = "<group>"; };
 		9C14F31F294A255E00178776 /* TipsButton3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsButton3.swift; sourceTree = "<group>"; };
+		9CB0D614294B5B3D0095EE06 /* TipsButton4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsButton4.swift; sourceTree = "<group>"; };
 		9CE8E22E2947B55B00CE851E /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 		9CE8E2322947B76500CE851E /* CounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterButton.swift; sourceTree = "<group>"; };
 		9CE8E2342948649B00CE851E /* BodyAndMindButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyAndMindButtons.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				9CE8E2362948DE9800CE851E /* TIpsButton.swift */,
 				9C14F31D294A22B100178776 /* TipsButton2.swift */,
 				9C14F31F294A255E00178776 /* TipsButton3.swift */,
+				9CB0D614294B5B3D0095EE06 /* TipsButton4.swift */,
 				9CE8E2342948649B00CE851E /* BodyAndMindButtons.swift */,
 				9CE8E22E2947B55B00CE851E /* TitleText.swift */,
 				9CE8E2322947B76500CE851E /* CounterButton.swift */,
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CE8E2332947B76500CE851E /* CounterButton.swift in Sources */,
+				9CB0D615294B5B3D0095EE06 /* TipsButton4.swift in Sources */,
 				2383DA4F29479206004BFD36 /* TipsView.swift in Sources */,
 				9CE8E2392948DFDC00CE851E /* TipsText.swift in Sources */,
 				9CE8E22F2947B55B00CE851E /* TitleText.swift in Sources */,
