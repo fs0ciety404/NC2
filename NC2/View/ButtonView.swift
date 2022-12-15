@@ -25,13 +25,13 @@ struct ButtonsView: View {
                 NavigationLink {
                     TipsView(bodyValue: true)
                 } label: {
-                    MainButton(text: "brain", icon: "brain", color: "8093F1")
+                    MainButton(text: "Body", icon: "figure.mind.and.body", color: "8093F1")
                 }
                     Spacer()
                 NavigationLink {
                     TipsView(bodyValue: false)
                 } label: {
-                    MainButton(text: "Mind", icon: "person", color: "72DDF7")
+                    MainButton(text: "Mind", icon: "brain", color: "72DDF7")
                 }
                     Spacer()
             }

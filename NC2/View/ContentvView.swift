@@ -68,7 +68,7 @@ struct ContentView: View {
         
         // Delay of 2,85 seconds (1 second = 1_000_000_000 nanoseconds)
         
-        try? await Task.sleep(nanoseconds: 1_850_000_000)
+        try? await Task.sleep(nanoseconds: 2_850_000_000)
         
         // Set timeFinished to true
         

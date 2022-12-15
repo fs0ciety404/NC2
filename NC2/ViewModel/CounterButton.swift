@@ -20,8 +20,8 @@ struct CounterButton: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .foregroundColor(.white)
-                        .opacity(0.25)
-                        .frame(width: 370, height: 100)
+                        .opacity(1)
+                        .frame(width: 180, height: 80)
                         .shadow(radius: 10, y: 0)
                     Text("\(calculateCountdown(from:selectedDate))")
                         .font(.title)
