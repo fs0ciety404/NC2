@@ -9,12 +9,12 @@ import Foundation
 import SwiftUI
 
 struct CounterButton: View {
-    @State var showTestCounter = false
+    @State var showdatePicker = false
     @State var selectedDate = Date()
-    @AppStorage("counter") var calculateDayDifference: Int = 0
+    @AppStorage("counter") var calculateCountdown: Int = 0
     var body: some View {
         Button {
-            showTestCounter.toggle()
+            showdatePicker.toggle()
         } label: {
             VStack {
                 ZStack {
@@ -23,12 +23,12 @@ struct CounterButton: View {
                         .opacity(0.25)
                         .frame(width: 370, height: 100)
                         .shadow(radius: 10, y: 0)
-                    Text("\(calculateDayDifference)")
+                    Text("\(calculateCountdown(from:selectedDate))")
                         .font(.title)
                         .font(.system(size: 0))
                         .foregroundColor(.black)
-                        .sheet(isPresented: $showTestCounter) {
-                            CounterView()
+                        .sheet(isPresented: $showdatePicker) {
+                            CounterView(selectedDate: $selectedDate)
                         }
                 }
                 Text("days")
@@ -36,8 +36,15 @@ struct CounterButton: View {
                     .font(.system(size: 30))
             }
         }
+        
+    }
+        func calculateCountdown(from date: Date) -> Int {
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.day], from: Date(), to: date)
+            return components.day ?? 0
     }
 }
+    
 
 struct MyPreviewProvider_Previews: PreviewProvider {
     static var previews: some View {

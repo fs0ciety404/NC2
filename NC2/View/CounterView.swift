@@ -8,25 +8,24 @@
 import SwiftUI
 
 struct CounterView: View {
-    @State var selectedDate = Date()
+    @Environment(\.dismiss) var dismiss
+    @Binding var selectedDate: Date
     @State var currentDate = Date()
     var body: some View {
         ZStack {
             Background()
             VStack {
-                // Use a DatePicker to allow the user to select a new date
                 DatePicker("", selection: $selectedDate, displayedComponents: [.date])
                     .datePickerStyle(.wheel)
-                // Display the day difference in a text label
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Select")
+                        .foregroundColor(Color("8093F1"))
+                }
                 
-                // Create a button to update the current date
             }
         }
-    }
-    func calculateDayDifference() -> Int {
-        let timeDifference = selectedDate.timeIntervalSince(currentDate)
-        let daysDifference = timeDifference / 86400
-        return Int(daysDifference)
     }
 }
 
@@ -34,6 +33,6 @@ struct CounterView: View {
 
 struct CounterView_Previews: PreviewProvider {
     static var previews: some View {
-        CounterView()
+        CounterView(selectedDate: .constant(Date()))
     }
 }
