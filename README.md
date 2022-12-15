@@ -2,6 +2,6 @@
 
 Ap app that use a counter to count days until childbirth in swiftUi
 
-#License
+# License
 
 GNU General Public License v3.0
