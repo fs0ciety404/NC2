@@ -76,6 +76,106 @@ struct ContentView: View {
     }
 }
 
+class MyScene: SKScene {
+
+    override func didMove(to view: SKView) {
+
+        // Set the background color to white
+
+        backgroundColor = UIColor.white
+
+        
+
+        // Set the size of the scene to be 300 x 300
+
+        size = CGSize(width: 300, height: 300)
+
+        
+
+        // Create a sprite node with the image "Stork_0"
+
+        let sprite = SKSpriteNode(imageNamed: "Stork_0")
+
+        
+
+        // Set the position of the sprite to be at 10% of the width and 50% of the height of the scene
+
+        sprite.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
+
+        
+
+        // Set the zPosition of the sprite to be above everything else
+
+        sprite.zPosition = 2
+
+        
+
+        addChild(sprite)
+
+
+        // Create an action to move the sprite to the right edge of the scene, plus 100 pixels, over a duration of 1.3 seconds
+
+        let moveAction = SKAction.moveTo(x: view.frame.width + 100, duration: 1.3)
+
+
+        // Create an array to hold the textures for the sprite's animation
+
+        var textures : [SKTexture] = []
+
+        
+
+        // Load each texture and add it to the array
+
+        for i in 0...6{
+
+            let texture = SKTexture(imageNamed: "Stork_\(i)")
+
+            textures.append(texture)
+
+        }
+
+       
+
+        // create animation with the provided textures
+
+        let animation = SKAction.animate(with: textures, timePerFrame: 0.1)
+
+      
+
+        sprite.run(SKAction.repeatForever(animation))
+
+      
+
+        // run the provided move action on the sprite
+
+        sprite.run(moveAction){
+
+        
+
+            // set the sprite's position
+
+                    sprite.position = CGPoint(x: self.size.width * 0.1, y: self.size.height * 0.5)
+
+        
+
+            // run the provided move action again
+
+                    sprite.run(moveAction){
+
+           
+
+                        // remove the sprite from its parent
+
+                        self.removeFromParent()
+
+                    }
+
+                }
+
+            }
+
+        }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
